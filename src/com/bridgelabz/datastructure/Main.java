@@ -24,14 +24,16 @@ public class Main {
         linkedList.deleteLast();
         linkedList.printList();
 
+        System.out.println("----------------");
+
         System.out.println("Welcome to Stacks Program");
 
 
         Stack stack = new Stack();
-        stack.push("10");
-        stack.push("20");
-        stack.push("30");
-        stack.push("40");
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
         stack.showElements();
 
         stack.pop();
@@ -42,6 +44,21 @@ public class Main {
         stack.showElements();
         System.out.println("----------------");
 
+
+        System.out.println("Welcome to Queue Program");
+        Queue queue = new Queue();
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.enqueue(40);
+        queue.enqueue(30);
+        queue.showElements();
+
+        queue.dequeue();
+        queue.showElements();
+        queue.dequeue();
+        queue.showElements();
+        queue.dequeue();
+        queue.showElements();
 
     }
 }
