@@ -31,4 +31,20 @@ public class LinkedList <T> {
         newNode.next = head; //new nodes next will point head
         head = newNode; //head value will become new node
     }
+
+    public void addLast(T data) {
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+            return;
+        }
+
+        Node currNode = head;
+        while(currNode.next != null) { //travel untill current node's next become null
+            currNode = currNode.next;
+        }
+
+        currNode.next = newNode;
+
+    }
 }
