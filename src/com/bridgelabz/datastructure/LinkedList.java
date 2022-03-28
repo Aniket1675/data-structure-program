@@ -21,4 +21,14 @@ public class LinkedList <T> {
             size++;  //do size++ when creating the new node
         }
     }
+    public void addFirst(T data){  //function is addFirst and String data is parameter
+        Node newNode = new Node(data);  //creating node
+        if (head == null){
+            head = newNode; //assign new node value to head
+            return;
+        }
+
+        newNode.next = head; //new nodes next will point head
+        head = newNode; //head value will become new node
+    }
 }
