@@ -82,4 +82,7 @@ public class LinkedList <T> {
 
         secondLast.next = null;
     }
+    public int getSize(){  //function to return the size
+        return  size;
+    }
 }
