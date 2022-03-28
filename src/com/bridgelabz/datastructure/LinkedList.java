@@ -60,6 +60,15 @@ public class LinkedList <T> {
         }
         System.out.println("NULL");
     }
+    public void deleteFirst() {
+        System.out.println("delete front Operation.");
+        if (head == null) {
+            return;
+        }
+
+        head = head.next;
+        size--;
+    }
 
     public void deleteLast() {
         if (head == null) {
