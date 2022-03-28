@@ -3,6 +3,7 @@ package com.bridgelabz.datastructure;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	 LinkedList linkedList = new LinkedList<>();
+     linkedList.addFirst(10);
     }
 }
