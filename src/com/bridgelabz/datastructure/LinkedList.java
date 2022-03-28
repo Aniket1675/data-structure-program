@@ -60,4 +60,26 @@ public class LinkedList <T> {
         }
         System.out.println("NULL");
     }
+
+    public void deleteLast() {
+        if (head == null) {
+            System.out.println("The list is empty");
+            return;
+        }
+        size--; //do size-- when deleting the node
+
+        if (head.next == null) {  //case in which linkedlist have only one node
+            head = null;
+            return;
+        }
+
+        Node secondLast = head;    //make second last node's next as null to delete the last
+        Node lastNode = head.next;
+        while(lastNode.next != null){
+            lastNode = lastNode.next;
+            secondLast = secondLast.next;
+        }
+
+        secondLast.next = null;
+    }
 }
